@@ -1,17 +1,17 @@
 (function ($) {
    // Dropdown menu
     $(function () {
-        $('.js-navbar__toggle').on('click', function () {
-            $('.js-navbar').toggleClass('is-opened');
-            $('.js-navbar__toggle').attr('aria-expanded', $('.js-navbar').hasClass('is-opened'));
+        $('.js-nabar__toggle').on('click', function () {
+            $('.js-nabar').toggleClass('is-opened');
+            $('.js-nabar__toggle').attr('aria-expanded', $('.js-nabar').hasClass('is-opened'));
             return false;
         });
-        $('.js-navbar a').each(function(i, link) {
+        $('.js-nabar a').each(function(i, link) {
             link = $(link);
             link.on('touchend', function(e) {
                 if(
                     link.parent().hasClass('has-submenu') &&
-                    $('.js-navbar').hasClass('is-opened') &&
+                    $('.js-nabar').hasClass('is-opened') &&
                     link.parent().attr('aria-expanded') !== 'true'
                 ) {
                     e.preventDefault();
@@ -19,7 +19,7 @@
                     link.parent().attr('aria-expanded', 'true');
                 }
 
-                $('.js-navbar li[aria-expanded="true"]').each(function(i, item) {
+                $('.js-nabar li[aria-expanded="true"]').each(function(i, item) {
                     if(!$.contains(item, link[0])) {
                         $(item).attr('aria-expanded', 'false');
                     }
@@ -33,7 +33,7 @@
 
     // Mainmenu improvements
     $(function ($) {
-        var mainmenu = $('.navbar__menu');
+        var mainmenu = $('.nabar__menu');
         var level0 = mainmenu.children('li');
 
         var setSubmenusPosition = function (submenus) {
@@ -49,19 +49,19 @@
                         var diff = $(window).outerWidth() - (submenu.offset().left + submenu.outerWidth());
 
                         if (diff < 0) {
-                            submenu.addClass('navbar__submenu--reversed');
+                            submenu.addClass('nabar__submenu--reversed');
                         }
                     }, 50);
                 });
             });
 
-            submenus.children('li').children('.navbar__submenu').each(function (i, submenus) {
+            submenus.children('li').children('.nabar__submenu').each(function (i, submenus) {
                 setSubmenusPosition($(submenus));
             });
         };
 
         if (level0.length) {
-            var level1 = level0.children('.navbar__submenu');
+            var level1 = level0.children('.nabar__submenu');
 
             if (level1.length) {
                 level1.each(function (i, submenu) {
@@ -77,7 +77,7 @@
                         }, 50);
                     });
 
-                    submenu.children('li').children('.navbar__submenu').each(function (i, submenus) {
+                    submenu.children('li').children('.nabar__submenu').each(function (i, submenus) {
                         setSubmenusPosition($(submenus));
                     });
                 });

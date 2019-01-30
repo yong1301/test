@@ -616,13 +616,13 @@ textarea {
       font-size: 1.125rem; } }
 
 /* Navigation ------------------------ */
-.navbar__menu {
+.nabar__menu {
   margin: 0;
   padding: 0;
   overflow: hidden;
   padding: 0; }
   @media all and (max-width: 56.1875em) {
-    .navbar__menu {
+    .nabar__menu {
       background: #fff;
       height: 100vh;
       left: 0;
@@ -637,15 +637,15 @@ textarea {
       z-index: 99999999;
       text-align: center; } }
   @media all and (min-width: 56.25em) {
-    .navbar__menu {
+    .nabar__menu {
       max-height: none;
       overflow: visible; } }
-  .navbar__menu li {
+  .nabar__menu li {
     color: #fff;
     list-style: none;
     padding: 0; }
     @media all and (min-width: 56.25em) {
-      .navbar__menu li {
+      .nabar__menu li {
         display: inline-block;
         font-size: 0.6243rem;
         letter-spacing: 0.08em;
@@ -653,42 +653,42 @@ textarea {
         position: relative;
         text-transform: uppercase;
         z-index: 2001; } }
-    .navbar__menu li:hover, .navbar__menu li[aria-expanded="true"] {
+    .nabar__menu li:hover, .nabar__menu li[aria-expanded="true"] {
       cursor: pointer; }
       @media all and (min-width: 56.25em) {
-        .navbar__menu li:hover > ul, .navbar__menu li[aria-expanded="true"] > ul {
+        .nabar__menu li:hover > ul, .nabar__menu li[aria-expanded="true"] > ul {
           opacity: 1;
           -webkit-transform: translate(0, 0);
           -ms-transform: translate(0, 0);
           transform: translate(0, 0);
           visibility: visible; }
-          .navbar__menu li:hover > ul li, .navbar__menu li[aria-expanded="true"] > ul li {
+          .nabar__menu li:hover > ul li, .nabar__menu li[aria-expanded="true"] > ul li {
             margin: 0;
             display: block; } }
-    .navbar__menu li a,
-    .navbar__menu li span {
+    .nabar__menu li a,
+    .nabar__menu li span {
       display: block;
       color: #4e5360;
       white-space: nowrap; }
       @media all and (max-width: 56.1875em) {
-        .navbar__menu li a,
-        .navbar__menu li span {
+        .nabar__menu li a,
+        .nabar__menu li span {
           padding: 0.75rem 0; } }
-      .navbar__menu li a:after,
-      .navbar__menu li span:after {
+      .nabar__menu li a:after,
+      .nabar__menu li span:after {
         content: "";
         display: block;
         margin: 0 auto; }
-      .navbar__menu li a:hover:not(span),
-      .navbar__menu li span:hover:not(span) {
+      .nabar__menu li a:hover:not(span),
+      .nabar__menu li span:hover:not(span) {
         color: #D6496C; }
 
 @media all and (max-width: 56.1875em) {
-  .navbar__submenu {
+  .nabar__submenu {
     margin: 0; } }
 
 @media all and (min-width: 56.25em) {
-  .navbar__submenu {
+  .nabar__submenu {
     background: #fff;
     -webkit-box-shadow: 0 0 10px rgba(78, 83, 96, 0.12);
     box-shadow: 0 0 10px rgba(78, 83, 96, 0.12);
@@ -707,7 +707,7 @@ textarea {
     visibility: hidden;
     width: auto;
     z-index: 2000; }
-    .navbar__submenu:after {
+    .nabar__submenu:after {
       background: #fff;
       -webkit-box-shadow: -4px -2px 6px rgba(78, 83, 96, 0.08);
       box-shadow: -4px -2px 6px rgba(78, 83, 96, 0.08);
@@ -721,7 +721,7 @@ textarea {
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
       width: 12px; }
-    .navbar__submenu:before {
+    .nabar__submenu:before {
       content: '';
       display: block;
       height: 15px;
@@ -729,7 +729,7 @@ textarea {
       position: absolute;
       top: -15px;
       width: 100%; }
-    .navbar__submenu li {
+    .nabar__submenu li {
       border: none;
       font-size: 0.79012rem;
       letter-spacing: normal;
@@ -737,55 +737,55 @@ textarea {
       padding: 0;
       text-transform: none; } }
     @media all and (min-width: 56.25em) and (max-width: 56.1875em) {
-      .navbar__submenu li {
+      .nabar__submenu li {
         padding: 0.25rem 0; } }
 
 @media all and (min-width: 56.25em) {
-      .navbar__submenu li a:hover:not(span),
-      .navbar__submenu li span:hover:not(span) {
+      .nabar__submenu li a:hover:not(span),
+      .nabar__submenu li span:hover:not(span) {
         color: #D6496C; }
-      .navbar__submenu li ul {
+      .nabar__submenu li ul {
         left: calc(100% + 12px);
         top: -22px;
         -webkit-transform: translate(-10%, 0);
         -ms-transform: translate(-10%, 0);
         transform: translate(-10%, 0); }
-        .navbar__submenu li ul:after {
+        .nabar__submenu li ul:after {
           left: -6px;
           top: 15px;
           -webkit-transform: rotate(-45deg);
           -ms-transform: rotate(-45deg);
           transform: rotate(-45deg); }
-        .navbar__submenu li ul:before {
+        .nabar__submenu li ul:before {
           height: 100%;
           left: -12px;
           top: 0;
           width: 12px; }
-        .navbar__submenu li ul.navbar__submenu--reversed {
+        .nabar__submenu li ul.nabar__submenu--reversed {
           left: auto;
           right: calc(100% + 12px);
           top: -22px; }
-          .navbar__submenu li ul.navbar__submenu--reversed:after {
+          .nabar__submenu li ul.nabar__submenu--reversed:after {
             left: auto;
             right: -6px;
             top: 15px;
             -webkit-transform: rotate(135deg);
             -ms-transform: rotate(135deg);
             transform: rotate(135deg); }
-          .navbar__submenu li ul.navbar__submenu--reversed:before {
+          .nabar__submenu li ul.nabar__submenu--reversed:before {
             height: 100%;
             left: auto;
             right: -12px;
             top: 0;
             width: 12px; }
-    .col-2 .navbar__submenu {
+    .col-2 .nabar__submenu {
       -webkit-column-count: 2;
       column-count: 2; }
-    .col-3 .navbar__submenu {
+    .col-3 .nabar__submenu {
       -webkit-column-count: 3;
       column-count: 3; } }
 
-.navbar__toggle {
+.nabar__toggle {
   background: none;
   border: none;
   border-top: 2px solid #2a2e30;
@@ -803,28 +803,28 @@ textarea {
   width: 1.8rem;
   z-index: 3; }
   @media all and (min-width: 56.25em) {
-    .navbar__toggle {
+    .nabar__toggle {
       display: none; } }
-  .navbar__toggle:before {
+  .nabar__toggle:before {
     border-top: 2px solid #2a2e30;
     content: "";
     right: 0;
     position: absolute;
     top: 4px;
     width: 50%; }
-  .navbar__toggle:after {
+  .nabar__toggle:after {
     border-bottom: 2px solid #2a2e30;
     content: "";
     right: 0;
     position: absolute;
     bottom: 0;
     width: 75%; }
-  .navbar__toggle:focus {
+  .nabar__toggle:focus {
     background: none;
     outline: none;
     border: none;
     border-top: 2px solid #4e5360; }
-  .navbar__toggle:hover {
+  .nabar__toggle:hover {
     background: none; }
 
 .is-opened > ul {
