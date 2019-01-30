@@ -1,0 +1,28 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "test",
+    "description": "",
+    "home_page_url": "https://yong1301.github.io/test",
+    "feed_url": "https://yong1301.github.io/test/feed.json",
+    "user_comment": "",
+    "author": {
+        "name": "test"
+    },
+    "items": [
+        {
+            "id": "https://yong1301.github.io/test/qqq.html",
+            "url": "https://yong1301.github.io/test/qqq.html",
+            "title": "qqq",
+            "summary": "ttt",
+            "content_html": "ttt",
+            "image": "https://yong1301.github.io/test/media/posts/1/",
+            "author": {
+                "name": "test"
+            },
+            "tags": [
+            ],
+            "date_published": "2019-01-30T13:04:19+09:00",
+            "date_modified": "2019-01-30T13:04:19+09:00"
+        }
+    ]
+}
